@@ -1,2 +1,2 @@
-# daily-outofstock-notification
-This module will send a daily notification of out of stock product list to the admin via email. Just uploading the folder will do the installation. After installing a backend area will where we can manage the 'Quantity limit to send low inventory notification'.  
+# daily-lowstock-notification
+This module will send daily notifications of low quantity products to the admin via email. Just uploading the folder to the root of magento will do the installation. After installing a field will appear in System > Config > Hatslogic area in the backend where you can manage the 'Quantity limit to send low inventory notification'. 
