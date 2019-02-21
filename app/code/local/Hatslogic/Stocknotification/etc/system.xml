@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<config>
+    <tabs>
+        <stocknotification translate="label" module="stocknotification">
+            <label>Hatslogic</label>
+            <sort_order>10</sort_order>
+        </stocknotification>
+    </tabs>
+    <sections>  
+        <stocknotification translate="label" module="stocknotification">
+            <label>Daily out of stock notifications</label>
+            <tab>stocknotification</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>120</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>                
+                <general>
+                    <label>General Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <qty_of_items translate="label">
+                            <label>Quantity limit to send low inventory notification</label>
+                            <comment>By default it is 0</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                            
+                        </qty_of_items>
+                        
+                    </fields>    
+                </general>        
+            </groups>
+        </stocknotification>
+    </sections>
+</config>

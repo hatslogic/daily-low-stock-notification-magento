@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Hatslogic_Stocknotification>
+            <active>true</active>
+            <codePool>local</codePool>
+            <version>0.1.0</version>
+        </Hatslogic_Stocknotification>
+    </modules>
+</config>

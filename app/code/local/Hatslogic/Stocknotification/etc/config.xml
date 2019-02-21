@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Hatslogic_Stocknotification>
+            <version>0.1.0</version>
+        </Hatslogic_Stocknotification>
+    </modules>
+    <global>
+        <helpers>
+            <stocknotification>
+                <class>Hatslogic_Stocknotification_Helper</class>
+            </stocknotification>
+        </helpers>
+        <models>
+            <stocknotification>
+                <class>Hatslogic_Stocknotification_Model</class>
+                <resourceModel>stocknotification_mysql4</resourceModel>
+            </stocknotification>
+        </models>
+        <template>
+            <email>
+                <custom_outofstock_tpl module="Hatslogic_Stocknotification">
+                    <label>Status Mails</label>
+                    <file>admin_product_alert.html</file>
+                    <type>html</type>
+                </custom_outofstock_tpl>
+            </email>
+        </template>
+    </global>
+    <crontab>
+        <jobs>
+            <stocknotification_sendoutofstocknotification>
+                <schedule>
+                    <cron_expr>0 */23 * * *</cron_expr>
+                </schedule>
+                <run>
+                    <model>stocknotification/cron::sendoutofstocknotification</model>
+                </run>
+            </stocknotification_sendoutofstocknotification>
+        </jobs>
+    </crontab>
+</config>
